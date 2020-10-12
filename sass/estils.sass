@@ -1,0 +1,345 @@
+
+/* Definicio de colors en variables */
+$marro-i: #DDBEB1
+$marro-ii: #BD9183
+$marro-iii: rgb(73, 61, 57)
+$marro-iv: rgb(104, 87, 81)
+
+/* importacio codi font bootstrap 4.3.1 */
+@import bootstrap-4.3.1/scss/bootstrap.scss
+
+/* estil personalitzat */
+html *
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif
+
+body 
+    background: radial-gradient($marro-i 4%, $marro-ii 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient($marro-i 4%, $marro-ii 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient($marro-i 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient($marro-i 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient($marro-i 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient($marro-i 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient($marro-ii, hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient($marro-ii, hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0
+    background-color: $marro-i
+    background-size: 100px 100px
+
+/* gif de carrega */
+#loading
+    height: 100%
+    width: 100%
+    background: rgba( 255, 255, 255, .8 ) url('../imgs/cargando.gif') 50% 50% no-repeat
+    position: fixed
+    z-index: 999
+    top: 0
+    left: 0
+    display: none
+
+/* titol principal */
+h1 
+    font-family: "Arial Black", Gadget, sans-serif
+    margin-bottom: 0
+    text-align: center
+    font-size: 35px
+    text-transform: uppercase
+    color: $marro-iii
+    text-shadow: 0 1px 0 white
+
+/* titol principal 2 */
+a#titol-link, h1#titol2 
+    font-family: "Arial Black", Gadget, sans-serif
+    margin-top: 10px
+    text-align: center
+    font-size: 25px
+    text-transform: uppercase
+    color: $marro-iii !important
+    text-shadow: 0 1px 0 white
+    text-decoration-line: overline underline
+
+/* titol principal 2 */
+a#titol-link:hover, h1#titol2:hover 
+    color: rgb(133, 110, 103) !important
+
+/* links */
+a, a:hover 
+    text-decoration: none !important
+
+/* menu navegacio */
+.navbar 
+    background:  $marro-iv !important    
+    font-size: 18px
+    position: relative
+
+/* links menu navegacio */
+.navbar-nav 
+    .nav-link 
+        color: rgb(240, 206, 192) !important
+        font-weight: bold
+        line-height: 1
+    .nav-link:hover 
+        color: rgb(148, 120, 111) !important
+
+/* logo menu navegacio */
+.navbar-brand 
+    img 
+        width: 40px
+
+/* barra de cerca */
+.search-nav     
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
+    background: linear-gradient(to right, $marro-iv , $marro-ii) 
+    width: 100%
+    margin-bottom: 60px
+    display: flex
+    justify-content: center
+
+/* barra de cerca */
+.input-group.search 
+    margin-top: 10px
+    margin-bottom: 10px
+
+/* boto de cerca */
+.btn-brown 
+    background-color: $marro-iv
+
+/* boto de cerca */
+.btn-brown:hover 
+    background-color: $marro-ii
+
+/* barra de cerca */
+.search 
+    width: 50%
+
+/* contingut principal */
+#my-elements 
+    .col-md-4.col-lg-3  
+        margin-top: 100px
+
+/* element del contingut principal */
+.card 
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+    text-align: center
+    .content 
+        padding: 15px 30px
+    h2 
+        color: $marro-iv
+        text-transform: uppercase
+        font-size: 20px
+        font-weight: bold
+    h2:hover 
+        color: $marro-ii
+    p 
+        color: rgb(168, 128, 116)
+
+/* element del contingut principal */
+.card:hover 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    opacity: 0.9
+
+/* imatge de element del contingut principal */
+.card-image 
+    overflow: hidden
+    margin-left: 15px
+    margin-right: 15px
+    margin-top: -30px
+    border-radius: 6px
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
+    img 
+        width: 100%
+
+/* imatge de element del contingut principal */
+.image-wrapper 
+    width: 100%
+    padding-bottom: 10px
+    img 
+        width: 100%
+        border-radius: 6px
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+
+/* pagina de detall */
+.modal-header, .modal-footer 
+    background:
+    radial-gradient($marro-i 4%, $marro-ii 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient($marro-i 4%, $marro-ii 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient($marro-i 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient($marro-i 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient($marro-i 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient($marro-i 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient($marro-ii, hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient($marro-ii, hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0
+    background-color: $marro-i
+    background-size: 100px 100px
+
+/* pagina de detall */
+.modal-body 
+    h3 
+        font-size: 18px 
+        color: $marro-iv
+        text-transform: uppercase
+        font-weight: bold
+    h2 
+        color: $marro-iv
+        text-transform: uppercase
+        font-weight: bold
+        span 
+            color: rgb(160, 138, 138)
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 25px    
+
+/* generes */
+.badge-genre 
+    background-color: $marro-iv
+    color: #FFFFFF
+    margin-right: 10px
+
+/* valoracio mitjana */
+.average 
+    display: inline-flex
+
+/* valoracio mitjana */
+.vote_average 
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    font-size: 20px
+    color: #FFFFFF
+    line-height: 50px
+    text-align: center
+    background: $marro-iv
+    font-weight: bold
+
+/* text valoracio mitjana */
+.vote_average_text 
+    width: 60px
+    line-height: 1
+    margin-left: 10px
+    font-size: 13px
+    margin-top: 12px
+    font-weight: bold
+
+/* estrella formulari valoracio */
+.fa-star 
+    font-size: 28px
+    margin-top: 12px
+    margin-left: 10px
+    cursor: pointer
+
+/* formulari valoracio */
+.starrating 
+    justify-content: flex-end
+
+/* formulari valoracio */
+.starrating > input 
+    display: none
+
+/* formulari valoracio */
+.starrating > input:checked ~ label, .starrating > input:not(.no-hover):hover ~ label  
+    color: #ffca08
+
+/* informacio pagina detall */
+.nav-tabs 
+    .nav-item 
+        a 
+            color: $marro-iii
+            font-weight: bold
+        a.active
+            color: rgb(189, 161, 149)
+        a:hover 
+            color: rgb(189, 161, 149)
+            
+/* llistes informacio de detall */
+#cast ul, #images ul, #element-images li, #rel ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+/* informacio actors i pelis/series relacionades */
+.card-tabs 
+    width: 140px
+    margin-top: 20px
+    span 
+        width: 138px
+        height: 175px
+    img 
+        object-fit: cover
+        object-position: 100% 0
+        height: 100%
+        width: 100%
+
+/* titol informacio actors i pelis/series relacionades */
+.card-title 
+    font-weight: bold
+
+/* subtitol informacio actors i pelis/series relacionades */
+.card-subtitle 
+    font-size: 14px
+    color: $marro-iv
+
+/* contenidors informacio de detall */
+#element-images, #element-cast, #element-rel     
+    display: flex    
+    overflow-x: auto
+
+/* contenidor imatges informacio de detall */
+.image-wrapper-detail 
+    width: 390px
+    margin-top: 10px
+    margin-bottom: 10px
+    margin-right: 15px
+    img 
+        width: 100%
+        border-radius: 6px
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+
+/* contenidor valoracio usuaris */
+#element-val.list-group
+    max-height: 400px
+    margin-bottom: 10px
+    overflow: scroll
+    -webkit-overflow-scrolling: touch
+
+/* contenidor valoracio usuaris */
+#element-val 
+    strong 
+        font-size: 16px
+        color: rgb(168, 128, 116)
+        text-decoration-line: underline
+    p 
+        font-size: 14px
+        color: $marro-iv
+        text-align: justify
+    .list-group-item
+        word-wrap: break-word
+
+/* paginacio */
+.page-nav 
+    margin-top: 50px
+    .page-link 
+        color: $marro-iv
+
+/* paginacio */
+.page-item.active .page-link 
+    background-color: $marro-iv !important 
+    border-color: $marro-iv !important
+
+/* peu de pagina */
+#peu-pagina 
+    background: radial-gradient(circle, $marro-iv , $marro-ii, $marro-iv )
+    height: 70px
+    margin-top: 50px
+    justify-content: center
+    display: flex
+    align-items: center
+    color: $marro-i
+    p 
+        margin: 0px
+        text-align: center
+
+       
+/* importacio del sass del RWD */       
+@import responsive                    

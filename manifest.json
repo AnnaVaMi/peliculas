@@ -1,0 +1,33 @@
+{
+    "name": "UOCFLIX",
+    "short_name": "UOCFLIX",
+    "icons": [
+        {
+          "src": "favicon.ico",
+          "sizes": "16x16",
+          "type": "image/x-icon"
+        },
+        {
+          "src": "imgs/cargando.gif",
+          "sizes": "35x35",
+          "type": "image/gif"
+        },
+        {
+          "src": "imgs/logos/imago.png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "imgs/logos/logo1.png",
+          "sizes": "443x203"
+        },
+        {
+          "src": "imgs/logos/logo2.png",
+          "sizes": "755x208"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#BD9183",
+    "theme_color": "#DDBEB1"
+}
+  
